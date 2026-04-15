@@ -1,8 +1,6 @@
 # kori
 
-**氷 — "ice"** — a Cloudflare-cached read-only proxy for a Walrus aggregator.
-
-Walrus blobs are content-addressed, so most aggregator responses are
+Kori is a Cloudflare-cached read-only proxy for a Walrus aggregator. Walrus blobs are content-addressed, so most aggregator responses are
 effectively immutable. kori sits at the edge in front of a single configured
 backend so repeated reads of the same blob or quilt patch land on Cloudflare's
 POPs instead of the upstream aggregator.
