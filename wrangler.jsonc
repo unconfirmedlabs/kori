@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kori",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-15",
+  "vars": {
+    // Override per-deployment via an external wrangler.jsonc passed to
+    // `bun run deploy -- --config <dir>`, or via .dev.vars locally.
+    "WALRUS_AGGREGATOR_URL": "https://aggregator.walrus.atalma.io"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
